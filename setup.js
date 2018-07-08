@@ -1,14 +1,16 @@
-const MongodbMemoryServer = require('mongodb-memory-server');
+const MongodbMemoryServer = require("mongodb-memory-server");
 
-const MONGO_DB_NAME = 'jest';
+const MONGO_DB_NAME = "jest";
 const mongod = new MongodbMemoryServer.default({
   instance: {
     dbName: MONGO_DB_NAME
   },
   binary: {
-    version: '3.2.19'
+    version: "3.2.19"
   }
 });
+
+console.log("Started MongodbMemoryServer");
 
 module.exports = function() {
   global.__MONGOD__ = mongod;

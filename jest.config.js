@@ -1,10 +1,5 @@
 module.exports = {
-  transform: {
-    "^.+\\.tsx?$": "ts-jest"
-  },
-  testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
-  globalSetup: "./setup.js",
-  globalTeardown: "./teardown.js",
-  testEnvironment: "./mongo-environment.js"
+  projects: ["<rootDir>/src/mongodb", "<rootDir>/src/normal"],
+  // globalSetup: "./setup.js",
+  // globalTeardown: "./teardown.js",
 };
