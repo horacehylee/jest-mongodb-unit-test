@@ -5,9 +5,9 @@
 
 module.exports = {
   displayName: 'Mongodb',
-  globalSetup: "./../../setup.js",
-  globalTeardown: "./../../teardown.js",
-  testEnvironment: "./../../mongo-environment.js",
+  // globalSetup: "./../../setup.js",
+  // globalTeardown: "./../../teardown.js",
+  testEnvironment: "./../../mongo-environment.v2.js",
   transform: {
     "^.+\\.tsx?$": "ts-jest"
   },
